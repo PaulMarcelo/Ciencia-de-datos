@@ -1,0 +1,29 @@
+DEVOLUCIÓN
+Navegación:
+
+RRHH -> listado de asignaciones -> pantalla detalles -> Pantalla devolución
+
+Preguntas:
+1.- Pantalla de devolución
+	- Se puede devolver prendas que fueron asignadas con  cualquier tipo de motivo ? si
+	- Se tiene que tener algun tipo de distinción entre los motivos de la asignación original (Cargo a la cuenta o no) ? (no entendí)
+		
+2.- Cuando se guarda la devolución
+	- Se tiene que realizar la validación para el centro de distribución al cual se va a fectar ? (eso lo hizo la transferencia)
+	- Se tiene que validar disponibilidad en bodega del articulo en la devolución ? (no)
+	- Los articulos de la devolución tiene que afectar el inventario de alguna forma ? (no, eso ya lo hace la transferencia)
+	- Solo se tiene que actualiza el campo AMOUNTRETOURNED del registro original de la asignación, con la cantidad de la devolución ? (si)
+	- Se deberia de guardar el id o numero de documento del registro original, en el registro de la devolucion ? (si sería bueno)
+	- Esto si es que algún momento quieren tener un rastro de a que asignación pertenece una devolución. 
+	- Cuando se finaliza el proceso de devolución, la pantalla debe navegar al listado de asignaciones o debe quedar en la misma pantalla. (debería navegar a la búsqueda)
+	
+3.- Luego de que se hace la devolución,  cuando se vuelva a ingresar al detalle de la asignación original
+	- Los articulos con las cantidades respectivas que fueron devueltas ya no deben de aparecer, ni en pantalla ni en los documentos PDF ? (si deben aparecer solo que ya no son elegibles y debería mostrarse la cant devuelta)
+
+4.- Se puede hacer varias devoluciones diferentes de un registro de asignación determinado? (si se podría)
+
+5.- Si una devolución contiene todos los articulos y con las mimas cantidades, de la asignación original, que debe pasar ?
+	- Hay que hacer algo adicional a la asignación original ? (no, solamente quedaría registrado por cada item la cant devuelta)
+	- Si se vuelve a ingresar  a la asignación original, y ya no tiene articulos  que se deberia mostrar ? (deben aparecer todos los artículos solo que ya no serían elegibles y debería mostrarse la cant devuelta)
+	
+	
